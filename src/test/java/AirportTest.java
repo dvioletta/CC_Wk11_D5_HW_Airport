@@ -9,16 +9,18 @@ public class AirportTest {
     Plane plane;
     Flight flight;
     Passenger passenger;
-    Hangers hangers;
+//    HangerCollection hangerCollection;
+
 
 
     @Before
     public void before(){
         airport = new Airport("GLA");
-        plane = new PlaneType(PlaneType.AIRBUSA380)
+        plane = new PlaneType(PlaneType.AIRBUSA380);
         flight = new Flight(PlaneType.BOEING757, 318, "New York");
         passenger = new Passenger("Howard Stark");
-        hangers = new Hangers()
+//        hangerCollection = new HangerCollection()
+
     }
 
 
@@ -29,7 +31,9 @@ public class AirportTest {
 
     @Test
     public void canAssignplane(){
-        hanger.addPlane
+        airport.addPlaneType(Plane){
+        assertEquals(1, airport.assignPlane());
+        }
     }
 
 

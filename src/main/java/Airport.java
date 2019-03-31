@@ -2,17 +2,23 @@ import java.util.ArrayList;
 
 public class Airport {
 
-    private ArrayList<Integer> hangers;
+    private ArrayList<Plane> planecollection;
     private String airport;
+    private ArrayList<Integer> hangerCollection;
 
 
     public Airport(String airport){
-        this.hangers = new ArrayList<>();
+        this.hangerCollection = new ArrayList<>();
         this.airport = airport;
+        this.planecollection = new ArrayList<>();
     }
 
     public
     String getAirport() {
         return airport;
+    }
+
+    public int assignPlane(){
+        return planecollection.size();
     }
 }
